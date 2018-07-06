@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* CSS Document */
+
+.nav_wrapper{ width:100%; margin:0 auto; background:#333; height:102px;}
+.wrap{ width:1200px; margin:0 auto;}
+.head{ margin-top:20px; margin-bottom:20px; line-height:30px; width:1200px;}
+.top_link li{ float:left; margin:0 10px;}
+.top_link li a{ color:#0b7bc3}
+.login_btn{ 
+	display:inline-block; 
+	width:64px; 
+	height:30px; 
+	background:#0b7bc3; 
+	text-align:center;
+	/* Gecko browsers */
+	-moz-border-radius:10px; 
+	/* Webkit browsers */
+	-webkit-border-radius: 10px; 
+	/* W3C syntax - likely to be standard so use for future proofing */
+	border-radius:10px;
+}
+.login_btn:hover{ background:#0464a1}
+.top_link li a.login_btn{ color:#fff;}
+.nav{ padding-top:10px; width:792px; margin:0 auto}
+
+.ico_htsc,.ico_htcx,.ico_httj,.ico_htfx,.ico_htwtk,.ico_xtwh{ width:30px; height:30px; display:inline-block; background:url(../images/ico_htsc.png) no-repeat center center;}
+.ico_htcx{ background:url(../images/ico_htcx.png) no-repeat center center;}
+.ico_httj{ background:url(../images/ico_httj.png) no-repeat center center;}
+.ico_htfx{ background:url(../images/ico_htfx.png) no-repeat center center;}
+.ico_htwtk{ background:url(../images/ico_htwtk.png) no-repeat center center;}
+.ico_xtwh{ background:url(../images/ico_xtwh.png) no-repeat center center;}
+.nav li{ 
+	width:122px; 
+	padding:10px 0;
+	background:none; 
+	text-align:center;
+	/* Gecko browsers */
+	-moz-border-radius:10px; 
+	/* Webkit browsers */
+	-webkit-border-radius: 10px; 
+	/* W3C syntax - likely to be standard so use for future proofing */
+	border-radius:10px;
+	margin:0 5px;
+	float:left;
+	overflow:hidden;
+}
+.nav li:hover{ background:#555;}
+.nav li a{color:#fff}
+
+/*添加欢迎页内容样式*/
+.wel_list li{ 
+	width:122px; 
+	padding:10px 0;
+	background:none; 
+	text-align:center;
+	/* Gecko browsers */
+	-moz-border-radius:10px; 
+	/* Webkit browsers */
+	-webkit-border-radius: 10px; 
+	/* W3C syntax - likely to be standard so use for future proofing */
+	border-radius:10px;
+	margin:0 10px;
+	float:left;
+	overflow:hidden;
+}
+.wel_list li:hover{ background:#e8e8e8;}
+.wel_list li a{color:#555}
+.dqyh_img,.qcht_img,.htcx_img,.httj_img,.htsc_img{width:50px; height:50px; display:inline-block; background:url(../images/dqyh_img.png) no-repeat center center;}
+.wel_list .no_link:hover{ background:none}
+.qcht_img{ background:url(../images/qcht_img.png) no-repeat center center}
+.htcx_img{ background:url(../images/htcx_img.png) no-repeat center center}
+.httj_img{ background:url(../images/httj_img.png) no-repeat center center}
+.htsc_img{ background:url(../images/htsc_img.png) no-repeat center center}
+
+/*内容部分样式*/
+.content{
+	background:#fff;
+	width:1200px;
+	margin:0 auto;
+}
+
+.sidebar { width:220px; margin-left:20px;}
+.maincon{ width:900px; margin-right:20px;}
+.sidebar dl{ width:100%;}
+.sidebar dl dt,.sidebar dl dd{ border-bottom:1px solid #ddd; height:40px; line-height:40px;}
+.sidebar dl dt,.bt2{ font-size:22px; color:#848484}
+.btmx{border-bottom:1px solid #ddd; height:40px; line-height:40px;}
+.btcter,.btm_btn,.bottom{ text-align:center; margin:0 auto; margin:20px 0;}
+.htsc_tab,.tab_ful,.tab_340,.tab_700,.htsc_tab1,.tab_ful1{ border-collapse:collapse; width:700px; margin:0 auto; color:#555}
+.htsc_tab,.htsc_tab td,.tab_ful td,.tab_ful th,.tab_340 td,.htsc_tab1,.htsc_tab1 td,.tab_ful1 td,.tab_ful1 th{ border:1px solid #ccc;line-height:24px; padding:5px 2px}
+.htsc_tab1,.htsc_tab1 td,.tab_ful1 td,.tab_ful1 th{ text-align:center;}
+.htsc_tab td.border_not{ border-top:none;}
+.htsc_tab td.border_nob{ border-bottom:none;}
+
+/*菜单折叠按钮*/
+.list_zdbtn,.active{ display:inline-block; width:40px; height:40px; background:url(../images/list_btn.png) no-repeat center center; vertical-align:middle;}
+.active{ background:url(../images/list_btn_h.png) no-repeat center center; vertical-align:middle;}
+
+
+/*各种按钮*/
+.btn{
+	padding:0 8px;
+	background-color:#5782ad;
+	margin:0 10px;
+	line-height:40px;
+	text-align:center;
+	border:none 0;
+	display:inline-block;
+	color:#fff;
+	/* Gecko browsers */
+	-moz-border-radius:10px; 
+	/* Webkit browsers */
+	-webkit-border-radius: 10px; 
+	/* W3C syntax - likely to be standard so use for future proofing */
+	border-radius:10px;
+	margin:0 10px;
+	font-size:16px;
+}
+/*添加*/
+.btn:hover{ background-color:#1c558e; color:#fff;}
+/*打印button*/
+.dybtn{ background:#f48585}
+.dybtn:hover{background:#C66}
+/*导出button*/
+.dcbtn,.bctjbtn,.llbtn{ background:#38bd90}
+.dcbtn:hover,.bctjbtn:hover,.llbtn:hover{background:#1c9a6f}
+/*上传button*/
+.schbtn{ background:#f3cd1e}
+.schbtn:hover{background:#e9c002}
+/*添加button*/
+.tjbtn{ background:#d44661}
+.tjbtn:hover{background:#c2213f}
+/*取消button*/
+.qxbtn,.qybtn{ background:#d76bbf}
+.qxbtn:hover,.qybtn:hover{background:#cb36aa}
+/*返回button*/
+.fhbtn,.schbtn,.xzhbtn{ background:#efc003}
+.fhbtn:hover,.schbtn:hover,.xzhbtn:hover{background:#d2a905}
+/*保存button*/
+.bcbtn,.xzbtn{ background:#bbb}
+.bcbtn:hover,.xzbtn:hover{background:#aaa}
+/*保存提交button*/
+
+/*小按钮*/
+.litbtn{
+	padding:0 5px;
+	margin:0 2px;
+	display:inline-block;
+	/* Gecko browsers */
+	-moz-border-radius:5px; 
+	/* Webkit browsers */
+	-webkit-border-radius: 5px; 
+	/* W3C syntax - likely to be standard so use for future proofing */
+	border-radius:5px;
+	color:#fff;
+	line-height:24px;
+	}
+.litbtn:hover{color:#fff}
+/*编辑button*/
+.bjbtn{ background:#34b017;}
+.bjbtn:hover{background:#2aa00f;}
+/*删除button*/
+.scbtn{ background:#e15828}
+.scbtn:hover{background:#c74011}
+/*检索button*/
+.jsbtn{ background:#1d83c5}
+.jsbtn:hover{background:#1070ad}
+/*下载*/
+
+
+/*表格输入框样式*/
+.text1_name,.text2_num,.text3_bum,.text4_com,.text5_100,.text6_600,.text8_240,.text7_40,.text9_200,.sel_200,.textarea1,.text_ty,.textarea_ty,.select_ty,.fieldset_ty,.text_ty1{ width:80px; height:30px; border:1px solid #ccc; text-indent:0.5em;}
+.text2_num{ width:30px;}
+.text3_bum{ width:150px;}
+.text4_com{ width:300px;}
+.text5_100{ width:100px;}
+.text6_600{ width:578px;}
+.text7_40{ width:40px;}
+.text8_240{ width:240px;}
+.text9_200{ width:220px;}
+.text_ty,.textarea_ty,.select_ty1,.fieldset_ty{ width:90%;}
+.select_ty2{ width:60%;}
+
+
+.textarea_ty,.select_ty1,.text_ty,.fieldset_ty{ height:80px; vertical-align:middle; margin:5px;}
+.select_ty1,.text_ty,.fieldset_ty,.text_ty1{ height:30px;}
+.text_ty1{ width:64%;}
+
+/*表格样式二*/
+.tab_wrap{ width:900px; margin:0 auto;}
+.tab_th{ background:#e8e8e8; text-align:center; vertical-align:middle;}
+.sel_200,.sel_100{ width:200px; color:#555; height:30px;}
+.sel_100{ width:100px;}
+.block_mb{ width:700px; margin:0 auto; line-height:36px;}
+
+.tab_ful,.tab_ful1{ width:100%;}
+.tab_ful th,.tab_ful1 th{ background:#e8e8e8}
+
+.jiansuo{ border:1px solid #ccc;}
+.jstiao{ height:36px; background:#e8e8e8; text-indent:1em; line-height:36px; font-size:18px;position:relative;}
+.zhed_btn,.zhed_btn_h{ width:36px; height:36px; background:url(../images/zhed_btn.png) no-repeat center center; position:absolute; right:0; cursor:pointer}
+.zhed_btn:active,.zhed_btn_h{ background:url(../images/zhed_btn_h.png) no-repeat}
+
+.fenye{ text-align:center; margin:20px 0;}
+.fenye a,.fenye span{ margin:0 5px;}
+.fenye a{ padding:3px 5px; border:1px solid #ccc; background:#e8e8e8}
+.fenye a:hover,.fenye a:active{ background:#0b7bc3; color:#fff; border:1px solid #0b7bc3}
+.fenye select{ border:1px solid #ccc; width:60px;}
+
+.textarea1{ width:560px; height:64px; line-height:24px; padding:5px;}
+
+.p_style1{ line-height:36px;}
+.p_style2{ font-size:18px;}
+.p_style3{ width:100%; text-align:center;}
+
+
+/*表格样式三 小表格*/
+.tab_340{ width:340px;}
+
+.ml{ margin-left:40px;}
+table td ul li{ margin:5px 0;}
+
+/*折叠样式*/
+.search_title {
+    color: #555;
+    font-size: 12px;
+	position:absolute;
+	right:36px;
+}

@@ -1,0 +1,190 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>[[${session.loginUser}]]欢迎页</title>
+<link th:href="@{/artt/css/base.css}" rel="stylesheet" type="text/css">
+<link th:href="@{/artt/css/main.css}" rel="stylesheet" type="text/css">
+<script th:src="@{/artt/js/jquery-1.8.3.min.js}"></script>
+<script th:src="@{/artt/js/layer.js}"></script>
+
+<script>
+  $(function(){
+    $(".zhed_btn").click(function(){ 
+      if ($(".condition").css("display")=="block") {
+        $(".search_img").addClass("zhed_btn_h").removeClass("zhed_btn");
+      }else if ($(".condition").css("display")=="none") {
+        $(".search_img").removeClass("zhed_btn_h").addClass("zhed_btn");
+      }
+      $(".condition").toggle(500);
+    });
+  });
+//查看合同附件
+function selectfile(pact_id){
+    layer.open({
+        type: 2,
+        title: '查看合同附件',
+        maxmin: true,
+        shadeClose: true, //点击遮罩关闭层
+        area : ['800px' , '520px'],
+        content: 'pact_lx_input.html'
+    });
+}
+
+//上传合同附件
+function uppactfile(pact_id){
+    layer.open({
+        type: 2,
+        title: '上传合同附件',
+        maxmin: true,
+        shadeClose: true, //点击遮罩关闭层
+        area : ['800px' , '520px'],
+        content: 'pact_lx_input.html'
+    });
+}
+
+//查看履行记录
+function select_lxjl(pact_id){
+    layer.open({
+        type: 2,
+        title: '查看履行记录',
+        maxmin: true,
+        shadeClose: true, //点击遮罩关闭层
+        area : ['800px' , '520px'],
+        content: 'pact_lx_view.html'
+    });
+}
+
+//查看合同信息
+function pact_view(pact_id){
+    layer.open({
+        type: 2,
+        title: '查看合同信息',
+        maxmin: true,
+        shadeClose: true, //点击遮罩关闭层
+        area : ['800px' , '520px'],
+        content: 'pact_view.html'
+    });
+}
+</script>
+</head>
+
+<body>
+<div class="tab_wrap">
+	
+	<div class="blank20"></div>
+	<div class="jiansuo">
+        <p class="jstiao">通知公告<span class="search_title">点击收缩/展开</span><span class="search_img zhed_btn"></span></p>
+        <table class="tab_ful1" style="width:96%">
+          <tbody>
+            
+            <tr>
+              <td>1</td>
+              <td>关于******的通知公告</td>
+              
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>管理办法0000000010001</td>
+              
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>管理办法0000000010002</td>
+              
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    
+	<div class="blank20"></div>
+	<div class="jiansuo">
+        <p class="jstiao">快速通道<span class="search_title">点击收缩/展开</span><span class="search_img zhed_btn"></span></p>
+        <div class="condition">
+        <div class="blank20"></div>
+        <ul class="wel_list">
+        	<li class="no_link"><i class="dqyh_img"></i><br>王某某<br>企法处</li>
+            <li><a href="jsp/pact/pact_input.html"><i class="qcht_img"></i><br>起草合同</a></li>
+            <li><a href="jsp/pact/pact_select.html"><i class="htcx_img"></i><br>合同查询</a></li>
+            <li><a href="jsp/pact/pact_analyze.html"><i class="httj_img"></i><br>合同统计</a></li>
+            <li><a href="jsp/pact/pact_sh_list.html"><i class="htsc_img"></i><br>合同审查</a></li>
+        </ul>
+        <div class="blank20"></div>
+        </div>
+    </div>
+    <div class="blank20"></div>
+	<div class="jiansuo">
+        <p class="jstiao">待办事项</p>
+        <div class="blank20"></div>
+        <table class="tab_ful1" style="width:96%">
+          <tbody>
+            <tr>
+              <th>序号</th>
+              <th>合同名称</th>
+              <th>合同编号</th>
+              <th>合同金额</th>
+              <th>资金来源</th>
+              <th>乙方名称</th>
+              <th>状态</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>郑州铁路局合同管理系统</td>
+              <td>HT-0001</td>
+              <td>2000</td>
+              <td>单一来源</td>
+              <td>峰华铁信科技</td>
+              <td>计统处审查中</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>郑州铁路局合同管理系统</td>
+              <td>HT-0001</td>
+              <td>2000</td>
+              <td>单一来源</td>
+              <td>峰华铁信科技</td>
+              <td>计统处审查中</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>郑州铁路局合同管理系统</td>
+              <td>HT-0001</td>
+              <td>2000</td>
+              <td>单一来源</td>
+              <td>峰华铁信科技</td>
+              <td>计统处审查中</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>郑州铁路局合同管理系统</td>
+              <td>HT-0001</td>
+              <td>2000</td>
+              <td>单一来源</td>
+              <td>峰华铁信科技</td>
+              <td>计统处审查中</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>郑州铁路局合同管理系统</td>
+              <td>HT-0001</td>
+              <td>2000</td>
+              <td>单一来源</td>
+              <td>峰华铁信科技</td>
+              <td>计统处审查中</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>郑州铁路局合同管理系统</td>
+              <td>HT-0001</td>
+              <td>2000</td>
+              <td>单一来源</td>
+              <td>峰华铁信科技</td>
+              <td>计统处审查中</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="blank20"></div>
+     </div>
+</div>
+</body>
+</html>

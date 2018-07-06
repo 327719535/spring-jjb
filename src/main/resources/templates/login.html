@@ -1,0 +1,56 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>郑州铁路局合同管理信息化系统</title>
+<link th:href="@{/artt/css/base.css}" rel="stylesheet" type="text/css">
+<link th:href="@{/artt/css/login.css}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<form th:action="@{/loginData}" method="post">
+<div class="login_wrapper">
+    <div class="login_wrap">
+        <p class="logo_img"><a href="#"><img th:src="@{/artt/images/logo.png}"></a></p>
+    </div>  
+    <div class="login_main">
+    	<div class="login_wrap">
+            <div class="left_img fl">
+            </div>
+            <div class="login_box fr">
+            	<div class="mt">
+                	<span th:text="#{login.tip}">欢迎登录</span>
+                    <p style="color:red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+                </div> 
+                <div class="blank20"></div>
+                <div class="form">
+                	<div class="item item-fore1 item-focus">
+                    	<label class="login-label name-label" for="loginname"></label>
+                        <input id="loginname" class="itxt" type="text" th:placeholder="#{login.username}" placeholder="邮箱/用户名/已验证手机" autocomplete="off" tabindex="1" name="username">
+                    </div>
+                    <div id="entry" class="item item-fore2">
+<label class="login-label pwd-label" for="nloginpwd"  th:text="#{login.password}"></label>
+<input id="nloginpwd" class="itxt itxt-error" type="password" name="password">
+                </div>
+                <div class="safe">
+                  <span>
+                  <input id="autoLogin" class="checkbox" type="checkbox">
+                  <label for="" th:text="#{login.remember}">记住密码</label>
+                    <a th:href="@{/login.html(l='zh_CN')}">中文</a>
+                      <a th:href="@{/login.html(l='en_US')}">English</a>
+                  </span>
+                  <!--<span class="forget-pw-safe">
+                  <a target="_blank" href="#">忘记密码？</a>
+                  </span>-->
+                </div>
+                <div class="blank20"></div>
+                <button class="login-btn" type="submit"><a class="btn-img btn-entry" tabindex="6" th:text="#{login.btn}">登&nbsp;&nbsp;&nbsp;&nbsp;录</a></button>
+            </div>
+        </div>
+    </div>
+</div>  
+</div> 
+<div class="bottom">郑州铁路局企法处</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+.fl{ float:left;}
+.fr{ float:right;}
+.clear{ clear:both;}
+ul,li{ list-style:none; overflow:hidden;}
+a{text-decoration:none; color:#555; cursor:pointer}
+a:hover{ color:#0b7bc3}
+.blank10{ width:100%; height:10px;}
+.blank20{ width:100%; height:20px;}
+body{ background:#f6f6f6; font-size:14px; font-family:"方正黑体简体"; color:#555}
+input{ background:none}
+
+.bt1{ font-size:20px; color:#555;}
+
+.mrg20{ margin:20px 0;}
+.bottom{ text-align:center; margin:0 auto; margin:20px 0;}
